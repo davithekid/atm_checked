@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.fundo {
+    z-index: -1;
+}
+
+.button-container {
+    position: relative;
+    z-index: 1; 
+}
+
+
+.botao1 {
+    padding: 20px;
+    width: 185px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    bottom: 140px;
+    position: absolute;
+    right: 370px;
+
+}
+
+.botao1:hover {
+    background-color: #bbbbbb;
+}
+
+.botao1 a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    color: black;
+}
+
+.botao2{
+    padding: 20px;
+    width: 185px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    bottom: 60px;
+    position: absolute;
+    right: 370px;
+}
+
+.botao2 a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    color: black;
+}
+
+.botao2:hover {
+    background-color: #bbbbbb;
+}
+
+.botao3{
+    padding: 20px;
+    width: 185px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    bottom: 140px;
+    position: absolute;
+    right: 805px;
+}
+
+.botao3 a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    color: black;
+}
+
+.botao3:hover {
+    background-color: #bbbbbb;
+}
+
+.botao4{
+    padding: 20px;
+    width: 185px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    bottom: 60px;
+    position: absolute;
+    right: 805px;
+}
+
+.botao4 a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    color: black;
+}
+
+.botao4:hover {
+    background-color: #bbbbbb;
+}
+
+.botao5{
+    padding: 60px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    bottom: 60px;
+    position: absolute;
+    right: 580px;
+}
+
+.botao5:hover {
+    background-color: #bbbbbb;
+}
+
+.botao5 a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    color: black;
+}
+
+.frase{
+    position: absolute;
+    z-index: 1;
+    top: 67px;
+    right: 450px;
+    color: #fff;
+    font-size:  45px;
+    font-family: 'Roboto Condensed';
+}
+
+.frase2{
+    position: absolute;
+    z-index: 1;
+    top: 540px;
+    right: 397px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto Condensed';
+}
+
+.frase3{
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 1410px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Roboto Condensed';
+}
+.frase4{
+    position: absolute;
+    z-index: 1;
+    top: 530px;
+    right: 1550px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto Condensed';
+}
+
+.cifrao{
+    position: absolute;
+    z-index: 1;
+    top: 600px;
+    right: 1790px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto Condensed';
+
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: linear-gradient(to right, #000627, #263dbd);
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.teclado {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+}
+
+.botoes {
+    padding: 10px;
+    width: 70px;
+    gap: 10px;
+    border-radius: 7px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botoes:hover {
+    background-color: #444;
+}
+
+.deposito-container {
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px 155px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.saldo-container {
+    color: white;
+    font-family: 'Roboto Condensed';
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.saldo {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+
+.botao-footer {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.botao-footer:hover {
+    background-color: #44444467;
+}
+
+.horario{
+    color: white;
+    font-family: 'Roboto Condensed';
+    margin-top: 7px;
+    margin-right: 20px;
+}
+
+.titulo {
+    font-family: 'Roboto Condensed';
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.sucesso {
+    text-align: center;
+    color: lime;
+
+}
+
+.erro{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    margin-top: 20px;
+}
+
+.invalido{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    margin-top: 20px;
+}
+
+h2 {
+    color: white;
+}
+
+p{
+    color: white;
+}

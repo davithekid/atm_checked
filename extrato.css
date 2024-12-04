@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to right, #000627, #263dbd);
+}
+
+header {
+    background: linear-gradient(to right, #000627, #081fa0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .header-content p {
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+.extrato {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.extrato h2 {
+    color: #263dbd;
+    margin-bottom: 20px;
+}
+
+.transacao-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.transacao-table th,
+.transacao-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.transacao-table th {
+    background-color: #263dbd;
+    color: white;
+}
+
+.transacao-table td {
+    background-color: #f9f9f9;
+}
+
+footer {
+    background: linear-gradient(to right, #000627, #081fa0);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .botao-footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+footer .botao-footer:hover {
+    background-color: #555;
+}
