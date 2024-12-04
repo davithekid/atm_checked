@@ -10,12 +10,11 @@ if (isset($_SESSION['saldo'])) {
  
 if (!isset($_SESSION['limiteTransferencia'])) {
     $_SESSION['limiteTransferencia'] = 1500;
-    echo "<h1 class='saldo2'> Limite de transferência diário da conta: R$" . number_format($_SESSION['limiteTransferencia'], 2, ',', '.') . "<br></h1>";
-}
- 
-if (isset($_SESSION['limiteTransferencia'])) {
+    echo "<h1 class='saldo3'> Limite de transferência diário da conta: R$" . number_format($_SESSION['limiteTransferencia'], 2, ',', '.') . "<br></h1>";
+} else{
     echo "<h1 class='saldo2'> Limite de transferência diário da conta: R$" . number_format($_SESSION['limiteTransferencia'], 2, ',', '.') . "<br><br></h1>";
 }
+ 
  
  
 $arrayNomes = [
@@ -86,10 +85,11 @@ $arrayNomes = [
                     "Digito" => $_POST["digito"]
                 ];
  
-                echo "<form class='original2' action='transferencia.php' method='post' class='result'>";
-                echo "Valor de transferência: <input type='number' name='transferencia' min='1' required>";
-                echo "<input type='submit' value='Enviar'>";
-                echo "</form>";
+                echo "<form class='original2' action='transferencia.php' method='post'>";
+                echo "<h1 class='valor'>Valor de transferência: </h1>";
+                echo "<input type='number' name='transferencia' min='1' required>";
+                echo "<input class='barra-valor' type='submit' value='Enviar'>";
+                echo "</form>";                
             } elseif (isset($_POST['transferencia'])) {
                 $transferencia = filter_input(INPUT_POST, 'transferencia', FILTER_VALIDATE_INT);
  
@@ -110,16 +110,16 @@ $arrayNomes = [
                     }
  
                     echo "<br> Valor de transferência: R$" . number_format($transferencia, 2, ',', '.') . "<br>";
-                    echo "Confirma transação? ";
- 
+                    echo "<h1 class='confirma'>Confirma transação? </h1>";
+                    echo "</div>";
                     echo '<form class="transf" action="transferencia.php" method="post">';
-                   
+                    echo "<div class='button-container'>";
                     echo "<button class='sim' type='submit' name='botaosim'>Sim</button>";
-                    echo "<button class='sim' type='submit' name='nao'>Não</button>";
-                   
+                    echo "<button class='nao' type='submit' name='nao'>Não</button>";
+                    echo "</div>";
                     echo "<input type='hidden' name='confirmarTransferencia' value='$transferencia' />";
                     echo '</form>';
-                    echo "</div>";
+ 
                 }
             } elseif (isset($_POST['botaosim'])) {
                 $transferencia = $_POST['confirmarTransferencia'];
@@ -145,25 +145,23 @@ $arrayNomes = [
     }
     ?>
  
-<footer>
+ 
  
 <footer>
-            <div class="footer-container">
-            <button class="botao-footer"><a href="./index.php">Inicio</a></button>
-            <div class="data">
+    <div class="footer-container">
+        <button class="botao-footer" onclick="location.href='./index.php'">Início</button>
+        <div class="data">
             <?php
-        // data atual
-        $dataAtual = new DateTime();
-        $timezone = new DateTimeZone('America/Sao_Paulo');
+            // data atual
+            $dataAtual = new DateTime();
+            $timezone = new DateTimeZone('America/Sao_Paulo');
+            $dataAtual->setTimezone($timezone);
+            echo $dataAtual->format('d/F/Y à\s h:i');
+            ?>
+        </div>
+    </div>
+</footer>
  
-        $dataAtual->setTimezone($timezone);
-        echo $dataAtual->format('d/F /Y à\s h:i');
- 
- 
-        ?>
-            </div>
-            </div>
-        </footer>
 </body>
  
 </html>

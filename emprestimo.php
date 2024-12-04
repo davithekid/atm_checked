@@ -142,7 +142,7 @@
 
                 '<section class="parcelas">';
                 '<div class="parc-container">';
-                // botões de parcelas com base no valor solicitado
+                // botões de parcelas 
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     if ($emprestimo >= 1000) {
                         echo '<form class="teste"  action="emprestimo.php" method="post">';
@@ -179,7 +179,7 @@
                                         </button>
                                       </div>';
 
-                        // Campo oculto para o valor do empréstimo
+                       
                         echo '<input type="hidden" name="emprestimo" value="' . $emprestimo . '"/>';
                         echo '</form>';
 
@@ -208,7 +208,7 @@
                                       <span class="parcela-valor">R$ ' . number_format($valorDeParcela1, 2, ',', '.') . '</span>
                                   </button>
                                 </div>';
-                        // Campo oculto para o valor do empréstimo
+                        
                         echo '<input type="hidden" name="emprestimo" value="' . $emprestimo . '"/>';
                         echo '</form>';
                     } else if ($emprestimo >= 10) {
@@ -228,7 +228,7 @@
                               <span class="parcela-valor">R$ ' . number_format($valorDeParcela1, 2, ',', '.') . '</span>
                           </button>
                         </div>';
-                        // Campo oculto para o valor do empréstimo
+                      
                         echo '<input type="hidden" name="emprestimo" value="' . $emprestimo . '"/>';
                         echo '</form>';
                     }
