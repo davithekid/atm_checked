@@ -142,7 +142,7 @@
 
                 '<section class="parcelas">';
                 '<div class="parc-container">';
-                // botões de parcelas 
+                // botões de parcelas   
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     if ($emprestimo >= 1000) {
                         echo '<form class="teste"  action="emprestimo.php" method="post">';
